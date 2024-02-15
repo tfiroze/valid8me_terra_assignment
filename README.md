@@ -19,7 +19,9 @@ Ensure you have your AWS access key ID and secret access key configured. You can
 
 ### Initialize Terraform:
     ```bash
+    
     terraform init
+    ```
 
 ### Usage
 
@@ -30,10 +32,12 @@ Review the `main.tf` file to understand the infrastructure that will be deployed
 Run `terraform plan` to see what changes Terraform will make to your infrastructure before actually making any changes:
 
     ```bash
-    terraform plan -
+    terraform plan 
+    ```
 
 ### Apply Changes:
 Apply the changes to your infrastructure:
 
     ```bash
     terraform apply -auto-approve 
+    ```
