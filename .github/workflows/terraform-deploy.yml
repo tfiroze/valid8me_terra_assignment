@@ -29,14 +29,14 @@ jobs:
         if: success()
         run: terraform apply tfplan
 
-      - name: Create Issue on Failure
-        if: failure()
-        uses: actions/create-issue@v1
-        with:
-          title: Deployment Failure
-          body: |
-            An error occurred during the deployment process. Please investigate and resolve the issue.
-            Error details:
-            ```
-            ${{ steps.terraform_plan.outputs.stdout }}
-            ```
+      # - name: Create Issue on Failure
+      #   if: failure()
+      #   uses: actions/create-issue@v1
+      #   with:
+      #     title: Deployment Failure
+      #     body: |
+      #       An error occurred during the deployment process. Please investigate and resolve the issue.
+      #       Error details:
+      #       ```
+      #       ${{ steps.terraform_plan.outputs.stdout }}
+      #       ```
