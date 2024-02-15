@@ -38,15 +38,3 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
-      # - name: Create Issue on Failure
-      #   if: failure()
-      #   uses: actions/create-issue@v1
-      #   with:
-      #     title: Deployment Failure
-      #     body: |
-      #       An error occurred during the deployment process. Please investigate and resolve the issue.
-      #       Error details:
-      #       ```
-      #       ${{ steps.terraform_plan.outputs.stdout }}
-      #       ```
