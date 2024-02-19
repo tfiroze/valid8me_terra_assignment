@@ -2,7 +2,8 @@
 
 This repository contains Terraform configurations to deploy infrastructure on AWS.
 
-You can find the IP address to of the ec2 at github actions -> terraform -> terraform apply
+You can find the IP address to of the ec2 at github actions -> terraform -> terraform apply.
+
 
 ## Setup
 
